@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{title}}</title>
+</head>
+<body>
+  <h1>{{title}}</h1>
+  <app-ready></app-ready>
+  <app-signin></app-signin>
+  <app-signup></app-signup>
+  <button (click)="clickme(box.value)">Click me</button>
+  <!-- <input type="text" placeholder="event input" #box (keydown)="clickme(box.value)"> -->
+  <input type="text" placeholder="event input" #box >
+  <!-- (keyup)="clickme(box.value)"> -->
+  <p>input is{{x}}</p>
+  <!-- <input type="text" placeholder="event input" #box2 (blur)="clickme(box2.value)">
+  <h1 #heading (mouseover)="clickme('over')">Conternt</h1>
+  <h1 #heading2 (mousleave)="clickme('leave')">Conternt</h1> -->
+</body>
+</html>
